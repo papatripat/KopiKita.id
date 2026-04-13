@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KopiKita.id — Kopi lokal berkualitas premium langsung dari petani Indonesia. Nikmati cita rasa autentik kopi Nusantara.">
+    <title>KopiKita.id — Kopi Lokal, Rasa Global</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-cup-hot-fill me-2"></i>Kopi<span>Kita</span>.id
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Pesan</a></li>
+                </ul>
+                <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle Dark Mode">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <p class="text-uppercase fw-semibold mb-2"
+                        style="color: var(--color-secondary); letter-spacing: 3px; font-size: 0.9rem;">
+                        <i class="bi bi-stars me-1"></i> Premium Local Coffee
+                    </p>
+                    <h1>Nikmati Kopi Terbaik dari <span>Nusantara</span></h1>
+                    <p class="my-4">
+                        Kami menghadirkan kopi pilihan terbaik langsung dari kebun petani lokal Indonesia.
+                        Setiap tegukan adalah perjalanan rasa yang tak terlupakan.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="menu.html" class="btn btn-coffee">
+                            <i class="bi bi-cup-hot me-2"></i>Lihat Menu
+                        </a>
+                        <a href="order.html" class="btn btn-coffee-outline">
+                            <i class="bi bi-bag me-2"></i>Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section style="background: var(--color-primary); padding: 2rem 0;">
+        <div class="container">
+            <div class="row text-center text-white">
+                <div class="col-6 col-md-3 stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Pelanggan Setia</div>
+                </div>
+                <div class="col-6 col-md-3 stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Varian Menu</div>
+                </div>
+                <div class="col-6 col-md-3 stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Tahun Berdiri</div>
+                </div>
+                <div class="col-6 col-md-3 stat-item">
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-label">Rating ⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUK UNGGULAN ===== -->
+    <section class="section-padding" id="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Produk Unggulan</h2>
+                <p>Pilihan kopi favorit pelanggan kami</p>
+            </div>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4 fade-in">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/espresso.png" class="card-img-top" alt="Espresso">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Espresso</h5>
+                            <p class="card-text">Kopi hitam pekat dengan crema sempurna. Bold dan intens.</p>
+                            <p class="card-price">Rp 18.000</p>
+                            <a href="order.html" class="btn btn-coffee btn-sm mt-2">
+                                <i class="bi bi-cart-plus me-1"></i>Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 fade-in delay-2">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/latte.png" class="card-img-top" alt="Caffe Latte">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Caffe Latte</h5>
+                            <p class="card-text">Perpaduan espresso dan susu steamed yang lembut dan creamy.</p>
+                            <p class="card-price">Rp 25.000</p>
+                            <a href="order.html" class="btn btn-coffee btn-sm mt-2">
+                                <i class="bi bi-cart-plus me-1"></i>Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 fade-in delay-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/cappuccino.png" class="card-img-top" alt="Cappuccino">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">Espresso dengan foam susu tebal dan taburan cocoa powder.</p>
+                            <p class="card-price">Rp 25.000</p>
+                            <a href="order.html" class="btn btn-coffee btn-sm mt-2">
+                                <i class="bi bi-cart-plus me-1"></i>Pesan
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="menu.html" class="btn btn-coffee-outline">
+                    Lihat Semua Menu <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section-padding section-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mengapa KopiKita?</h2>
+                <p>Komitmen kami pada kualitas dan pelanggan</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4 fade-in">
+                    <div class="card h-100 p-4" style="border: none; background: transparent;">
+                        <div style="font-size: 3rem; color: var(--color-secondary);">
+                            <i class="bi bi-tree"></i>
+                        </div>
+                        <h5 class="mt-3" style="color: var(--color-primary);">100% Biji Lokal</h5>
+                        <p class="card-text">Langsung dari kebun petani kopi terbaik di Indonesia, tanpa perantara.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in delay-2">
+                    <div class="card h-100 p-4" style="border: none; background: transparent;">
+                        <div style="font-size: 3rem; color: var(--color-secondary);">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <h5 class="mt-3" style="color: var(--color-primary);">Fresh Roasted</h5>
+                        <p class="card-text">Biji kopi di-roast segar setiap hari untuk menjaga aroma dan rasa terbaik.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in delay-4">
+                    <div class="card h-100 p-4" style="border: none; background: transparent;">
+                        <div style="font-size: 3rem; color: var(--color-secondary);">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h5 class="mt-3" style="color: var(--color-primary);">Dibuat dengan Cinta</h5>
+                        <p class="card-text">Setiap cangkir dibuat oleh barista berpengalaman dengan passion yang
+                            tinggi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section
+        style="background: linear-gradient(135deg, var(--color-dark), var(--color-primary-dark)); padding: 4rem 0;">
+        <div class="container text-center">
+            <h2 style="color: #fff; margin-bottom: 1rem;">Siap Menikmati Kopi Terbaik?</h2>
+            <p style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 2rem;">
+                Pesan sekarang dan rasakan pengalaman kopi yang tak terlupakan. Gratis ongkir untuk pemesanan pertama!
+            </p>
+            <a href="order.html" class="btn btn-coffee btn-lg">
+                <i class="bi bi-bag-check me-2"></i>Pesan Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5><i class="bi bi-cup-hot-fill me-2"></i>KopiKita.id</h5>
+                    <p>Kopi lokal berkualitas premium langsung dari petani Indonesia. Menyajikan cita rasa autentik
+                        Nusantara untuk Anda.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">Tentang</a></li>
+                        <li class="mb-2"><a href="menu.html">Menu</a></li>
+                        <li class="mb-2"><a href="gallery.html">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Lainnya</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="testimonial.html">Testimoni</a></li>
+                        <li class="mb-2"><a href="order.html">Pemesanan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Jl. Kopi Nusantara No. 17, Surabaya</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+62 812-3456-7890</li>
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>hello@kopikita.id</li>
+                        <li class="mb-2"><i class="bi bi-clock me-2"></i>08.00 – 22.00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KopiKita.id — All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTopBtn" title="Kembali ke atas">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
