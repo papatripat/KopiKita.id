@@ -53,19 +53,19 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 
-    // ---------- Save to localStorage ----------
+
     function saveOrders() {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(orders));
     }
 
-    // ---------- Escape HTML ----------
+
     function escapeHtml(text) {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
     }
 
-    // ---------- Show toast ----------
+
     function showToast(message) {
         if (toastElement) {
             const toastBody = toastElement.querySelector('.toast-body');
@@ -75,11 +75,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ---------- Validate form ----------
+
     function validateForm(nama, menu, jumlah, alamat) {
         let isValid = true;
 
-        // Reset errors
+
         clearErrors();
 
         if (!nama.trim()) {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return isValid;
     }
 
-    // ---------- Show error ----------
+ 
     function showError(fieldId, message) {
         const field = document.getElementById(fieldId);
         if (field) {
@@ -117,14 +117,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // ---------- Clear errors ----------
+
     function clearErrors() {
         document.querySelectorAll('.is-invalid').forEach(el => {
             el.classList.remove('is-invalid');
         });
     }
 
-    // ---------- Form submit ----------
+
     if (orderForm) {
         orderForm.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showToast(`Pesanan ${order.nama} berhasil ditambahkan! ☕`);
         });
 
-        // Remove is-invalid on input
+
         orderForm.querySelectorAll('input, select, textarea').forEach(el => {
             el.addEventListener('input', function () {
                 this.classList.remove('is-invalid');
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ---------- Delete order ----------
+
     window.deleteOrder = function (index) {
         if (index >= 0 && index < orders.length) {
             const deletedName = orders[index].nama;
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
-    // ---------- Search / Filter ----------
+
     function filterOrders(query) {
         const q = query.toLowerCase();
         const filtered = orders.filter(order =>
@@ -201,6 +201,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ---------- Initial render ----------
+
     renderTable();
 });

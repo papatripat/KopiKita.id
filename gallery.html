@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <!-- ===== NAVBAR ===== -->
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- ===== PAGE HEADER ===== -->
+
     <section class="page-header">
         <div class="container">
             <h1>Galeri</h1>
@@ -52,7 +52,7 @@
         </div>
     </section>
 
-    <!-- ===== GALLERY ===== -->
+
     <section class="section-padding">
         <div class="container">
             <div class="section-title">
@@ -60,54 +60,54 @@
                 <p>Setiap cangkir punya ceritanya sendiri</p>
             </div>
             <div class="row g-4">
-                <!-- Gallery Item 1 -->
+
                 <div class="col-lg-4 col-md-6 fade-in">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/hero-coffee.png" alt="Suasana Cafe">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Suasana hangat di KopiKita</p>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item 2 -->
+
                 <div class="col-lg-4 col-md-6 fade-in delay-1">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/espresso.png" alt="Espresso Shot">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Espresso shot yang sempurna</p>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item 3 -->
+
                 <div class="col-lg-4 col-md-6 fade-in delay-2">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/latte.png" alt="Latte Art">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Latte art dari barista kami</p>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item 4 -->
+
                 <div class="col-lg-4 col-md-6 fade-in delay-3">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/cappuccino.png" alt="Cappuccino">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Cappuccino dengan foam lembut</p>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item 5 -->
+
                 <div class="col-lg-4 col-md-6 fade-in delay-4">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/americano.png" alt="Americano">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Americano untuk pagi hari</p>
                         </div>
                     </div>
                 </div>
-                <!-- Gallery Item 6 -->
+
                 <div class="col-lg-4 col-md-6 fade-in delay-5">
-                    <div class="gallery-item">
+                    <div class="gallery-item gallery-lightbox">
                         <img src="assets/hero-coffee.png" alt="Coffee Beans">
                         <div class="gallery-overlay">
                             <p><i class="bi bi-camera me-2"></i>Biji kopi pilihan terbaik</p>
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <!-- ===== INSTAGRAM CTA ===== -->
+
     <section
         style="background: linear-gradient(135deg, var(--color-dark), var(--color-primary-dark)); padding: 4rem 0;">
         <div class="container text-center">
@@ -130,7 +130,7 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
+
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
@@ -176,6 +176,24 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <img src="" alt="" id="lightboxImg" class="w-100">
+                    <p class="lightbox-caption" id="lightboxCaption"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/6281234567890" target="_blank" class="whatsapp-float" title="Chat via WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+        <span class="wa-tooltip">Chat kami di WhatsApp!</span>
+    </a>
 
     <button class="scroll-top" id="scrollTopBtn" title="Kembali ke atas">
         <i class="bi bi-arrow-up"></i>
